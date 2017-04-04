@@ -1,0 +1,3 @@
+[submodule "kicad/bl_kicad_library"]
+	path = kicad/bl_kicad_library
+	url = https://github.com/brico-labs/bl_kicad_library

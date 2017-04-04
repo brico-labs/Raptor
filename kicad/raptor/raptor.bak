@@ -1,0 +1,661 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bl_kicad
+LIBS:raptor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Raptor"
+Date "2017-03-11"
+Rev "v 1.0"
+Comp "BricoLabs"
+Comment1 "Revisión: TCRobotics"
+Comment2 "KiCAD: salvari"
+Comment3 "CC-By-SA-INTL 4.0"
+Comment4 "Diseño: Felixstpd"
+$EndDescr
+$Comp
+L Arduino_Pro_Mini U2
+U 1 1 58A079FA
+P 7900 2075
+F 0 "U2" H 7900 2675 60  0000 C CNN
+F 1 "Arduino_Pro_Mini" V 7900 2075 60  0000 C CNN
+F 2 "bl_kicad:DIP-24_600" H 7900 2075 60  0001 C CNN
+F 3 "" H 7900 2075 60  0000 C CNN
+	1    7900 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L TB6612FNG_BREAKOUT U1
+U 1 1 58A07C4E
+P 4275 5375
+F 0 "U1" H 4825 5975 60  0000 C CNN
+F 1 "TB6612FNG_BREAKOUT" V 4275 5425 60  0000 C CNN
+F 2 "bl_kicad:DIP-16_600" H 4275 5375 60  0001 C CNN
+F 3 "" H 4275 5375 60  0000 C CNN
+	1    4275 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 58A07DAB
+P 3200 1875
+F 0 "SW2" H 3350 1985 50  0000 C CNN
+F 1 "SW_PUSH" H 3200 1795 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH-12mm" H 3200 1875 50  0001 C CNN
+F 3 "" H 3200 1875 50  0000 C CNN
+	1    3200 1875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 58A07EE2
+P 3200 2425
+F 0 "R1" V 3280 2425 50  0000 C CNN
+F 1 "10k" V 3200 2425 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3130 2425 50  0001 C CNN
+F 3 "" H 3200 2425 50  0000 C CNN
+	1    3200 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58A07F29
+P 2025 2800
+F 0 "BT1" H 2125 2850 50  0000 L CNN
+F 1 "Battery" H 2125 2750 50  0000 L CNN
+F 2 "bl_kicad:Battery_16340" V 2025 2840 50  0001 C CNN
+F 3 "" V 2025 2840 50  0000 C CNN
+	1    2025 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT2
+U 1 1 58A0807D
+P 2025 3225
+F 0 "BT2" H 2125 3275 50  0000 L CNN
+F 1 "Battery" H 2125 3175 50  0000 L CNN
+F 2 "bl_kicad:Battery_16340" V 2025 3265 50  0001 C CNN
+F 3 "" V 2025 3265 50  0000 C CNN
+	1    2025 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 58A08461
+P 1125 7025
+F 0 "#FLG01" H 1125 7120 50  0001 C CNN
+F 1 "PWR_FLAG" H 1125 7205 50  0000 C CNN
+F 2 "" H 1125 7025 50  0000 C CNN
+F 3 "" H 1125 7025 50  0000 C CNN
+	1    1125 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 58A08481
+P 1625 7025
+F 0 "#FLG02" H 1625 7120 50  0001 C CNN
+F 1 "PWR_FLAG" H 1625 7205 50  0000 C CNN
+F 2 "" H 1625 7025 50  0000 C CNN
+F 3 "" H 1625 7025 50  0000 C CNN
+	1    1625 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58A084AD
+P 1125 7150
+F 0 "#PWR03" H 1125 6900 50  0001 C CNN
+F 1 "GND" H 1125 7000 50  0000 C CNN
+F 2 "" H 1125 7150 50  0000 C CNN
+F 3 "" H 1125 7150 50  0000 C CNN
+	1    1125 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 58A08CD7
+P 2025 6975
+F 0 "#PWR04" H 2025 6825 50  0001 C CNN
+F 1 "VCC" H 2025 7125 50  0000 C CNN
+F 2 "" H 2025 6975 50  0000 C CNN
+F 3 "" H 2025 6975 50  0000 C CNN
+	1    2025 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 58A08D3A
+P 3200 1425
+F 0 "#PWR05" H 3200 1275 50  0001 C CNN
+F 1 "VCC" H 3200 1575 50  0000 C CNN
+F 2 "" H 3200 1425 50  0000 C CNN
+F 3 "" H 3200 1425 50  0000 C CNN
+	1    3200 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58A08D84
+P 3200 2725
+F 0 "#PWR06" H 3200 2475 50  0001 C CNN
+F 1 "GND" H 3200 2575 50  0000 C CNN
+F 2 "" H 3200 2725 50  0000 C CNN
+F 3 "" H 3200 2725 50  0000 C CNN
+	1    3200 2725
+	1    0    0    -1  
+$EndComp
+Text Label 3525 2225 0    60   ~ 0
+Button
+$Comp
+L GND #PWR07
+U 1 1 58A08F67
+P 2025 3525
+F 0 "#PWR07" H 2025 3275 50  0001 C CNN
+F 1 "GND" H 2025 3375 50  0000 C CNN
+F 2 "" H 2025 3525 50  0000 C CNN
+F 3 "" H 2025 3525 50  0000 C CNN
+	1    2025 3525
+	1    0    0    -1  
+$EndComp
+Text Notes 1725 1125 0    60   ~ 0
+Alimentación
+Text Notes 3275 1125 0    60   ~ 0
+Botón
+$Comp
+L CONN_01X02 P1
+U 1 1 58A098F5
+P 2050 5125
+F 0 "P1" H 2050 5275 50  0000 C CNN
+F 1 "LEFT_ENG" V 2150 5125 50  0000 C CNN
+F 2 "bl_kicad:Motor_raptor" H 2050 5125 50  0001 C CNN
+F 3 "" H 2050 5125 50  0000 C CNN
+	1    2050 5125
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 58A09A62
+P 2050 5725
+F 0 "P2" H 2050 5875 50  0000 C CNN
+F 1 "RIGHT_ENG" V 2150 5725 50  0000 C CNN
+F 2 "bl_kicad:Motor_raptor" H 2050 5725 50  0001 C CNN
+F 3 "" H 2050 5725 50  0000 C CNN
+	1    2050 5725
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 58A09F43
+P 3300 6050
+F 0 "#PWR08" H 3300 5800 50  0001 C CNN
+F 1 "GND" H 3300 5900 50  0000 C CNN
+F 2 "" H 3300 6050 50  0000 C CNN
+F 3 "" H 3300 6050 50  0000 C CNN
+	1    3300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 58A0A055
+P 3175 4750
+F 0 "#PWR09" H 3175 4600 50  0001 C CNN
+F 1 "VCC" H 3175 4900 50  0000 C CNN
+F 2 "" H 3175 4750 50  0000 C CNN
+F 3 "" H 3175 4750 50  0000 C CNN
+	1    3175 4750
+	1    0    0    -1  
+$EndComp
+Text Label 5025 4975 0    60   ~ 0
+PWM_LEFT
+Text Label 5025 5075 0    60   ~ 0
+IN2_LEFT
+Text Label 5025 5175 0    60   ~ 0
+IN1_LEFT
+Text Label 5025 5275 0    60   ~ 0
+STBY
+Text Label 5025 5375 0    60   ~ 0
+IN1_RIGHT
+Text Label 5025 5475 0    60   ~ 0
+IN2_RIGHT
+Text Label 5025 5575 0    60   ~ 0
+PWM_RIGHT
+$Comp
+L GND #PWR010
+U 1 1 58A0A1C2
+P 5200 6050
+F 0 "#PWR010" H 5200 5800 50  0001 C CNN
+F 1 "GND" H 5200 5900 50  0000 C CNN
+F 2 "" H 5200 6050 50  0000 C CNN
+F 3 "" H 5200 6050 50  0000 C CNN
+	1    5200 6050
+	1    0    0    -1  
+$EndComp
+Text Notes 1725 4375 0    60   ~ 0
+TB6612FNG driver y motores
+$Comp
+L CONN_02X08 P3
+U 1 1 58A0A50A
+P 8750 4875
+F 0 "P3" H 8750 5325 50  0000 C CNN
+F 1 "CONN_02X08" V 8750 4875 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x08" H 8750 3675 50  0001 C CNN
+F 3 "" H 8750 3675 50  0000 C CNN
+	1    8750 4875
+	1    0    0    -1  
+$EndComp
+Text Label 8500 5225 2    60   ~ 0
+Sensor1
+Text Label 8500 5125 2    60   ~ 0
+Sensor2
+Text Label 8500 5025 2    60   ~ 0
+Sensor3
+Text Label 8500 4925 2    60   ~ 0
+Sensor4
+Text Label 8500 4825 2    60   ~ 0
+Sensor5
+Text Label 8500 4725 2    60   ~ 0
+Sensor6
+Text Label 8500 4625 2    60   ~ 0
+Sensor7
+Text Label 8500 4525 2    60   ~ 0
+Sensor8
+$Comp
+L GND #PWR011
+U 1 1 58A0AB26
+P 9250 4600
+F 0 "#PWR011" H 9250 4350 50  0001 C CNN
+F 1 "GND" H 9250 4450 50  0000 C CNN
+F 2 "" H 9250 4600 50  0000 C CNN
+F 3 "" H 9250 4600 50  0000 C CNN
+	1    9250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR012
+U 1 1 58A0AB4E
+P 9250 5050
+F 0 "#PWR012" H 9250 4900 50  0001 C CNN
+F 1 "VCC" H 9250 5200 50  0000 C CNN
+F 2 "" H 9250 5050 50  0000 C CNN
+F 3 "" H 9250 5050 50  0000 C CNN
+	1    9250 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 4350 0    60   ~ 0
+Sensores de linea
+NoConn ~ 8550 1725
+$Comp
+L GND #PWR013
+U 1 1 58A0AE90
+P 8675 2775
+F 0 "#PWR013" H 8675 2525 50  0001 C CNN
+F 1 "GND" H 8675 2625 50  0000 C CNN
+F 2 "" H 8675 2775 50  0000 C CNN
+F 3 "" H 8675 2775 50  0000 C CNN
+	1    8675 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 58A0B212
+P 7075 2775
+F 0 "#PWR014" H 7075 2525 50  0001 C CNN
+F 1 "GND" H 7075 2625 50  0000 C CNN
+F 2 "" H 7075 2775 50  0000 C CNN
+F 3 "" H 7075 2775 50  0000 C CNN
+	1    7075 2775
+	1    0    0    -1  
+$EndComp
+Text Label 6925 1925 2    60   ~ 0
+IN1_LEFT
+Text Label 6925 2025 2    60   ~ 0
+IN2_LEFT
+Text Label 6925 2125 2    60   ~ 0
+Sensor8
+Text Label 6925 2225 2    60   ~ 0
+PWM_LEFT
+Text Label 6925 2325 2    60   ~ 0
+Sensor7
+Text Label 6925 2425 2    60   ~ 0
+Button
+Text Label 6925 2525 2    60   ~ 0
+Sensor6
+Text Label 6925 2625 2    60   ~ 0
+Sensor5
+Text Label 8825 1925 0    60   ~ 0
+Sensor1
+Text Label 8825 2025 0    60   ~ 0
+Sensor2
+Text Label 8825 2125 0    60   ~ 0
+Sensor3
+Text Label 8825 2225 0    60   ~ 0
+Sensor4
+Text Label 8825 2325 0    60   ~ 0
+STBY
+Text Label 8825 2425 0    60   ~ 0
+IN1_RIGHT
+Text Label 8825 2525 0    60   ~ 0
+IN2_RIGHT
+Text Label 8825 2625 0    60   ~ 0
+PWM_RIGHT
+Text Notes 6700 1225 0    60   ~ 0
+Arduino Pro Micro
+Text Label 1925 1625 0    60   ~ 0
+Vbat
+Text Label 8675 1375 0    60   ~ 0
+Vbat
+$Comp
+L VCC #PWR015
+U 1 1 58A1F72F
+P 8825 1700
+F 0 "#PWR015" H 8825 1550 50  0001 C CNN
+F 1 "VCC" H 8825 1850 50  0000 C CNN
+F 2 "" H 8825 1700 50  0000 C CNN
+F 3 "" H 8825 1700 50  0000 C CNN
+	1    8825 1700
+	1    0    0    -1  
+$EndComp
+Text Label 3325 4675 0    60   ~ 0
+Vbat
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 58A2028B
+P 2400 7000
+F 0 "#FLG016" H 2400 7095 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 7180 50  0000 C CNN
+F 2 "" H 2400 7000 50  0000 C CNN
+F 3 "" H 2400 7000 50  0000 C CNN
+	1    2400 7000
+	1    0    0    -1  
+$EndComp
+Text Label 2950 6900 0    60   ~ 0
+Vbat
+NoConn ~ 9000 4625
+NoConn ~ 9000 4725
+NoConn ~ 9000 4825
+NoConn ~ 9000 4925
+NoConn ~ 9000 5025
+NoConn ~ 9000 5225
+$Comp
+L Switch_SPDT_x2 SW1
+U 1 1 58C2ED00
+P 2025 2050
+F 0 "SW1" H 1825 2200 50  0000 C CNN
+F 1 "Switch_SPDT_x2" H 1775 1900 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_Micro_SPST" H 2025 2050 50  0001 C CNN
+F 3 "" H 2025 2050 50  0000 C CNN
+	1    2025 2050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2125 1750
+$Comp
+L CONN_01X04 P4
+U 1 1 58C3D2DC
+P 4625 1850
+F 0 "P4" H 4625 2100 50  0000 C CNN
+F 1 "CONN_01X04" V 4725 1850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 4625 1850 50  0001 C CNN
+F 3 "" H 4625 1850 50  0000 C CNN
+	1    4625 1850
+	-1   0    0    1   
+$EndComp
+Text Label 5025 1900 0    60   ~ 0
+Tx
+Text Label 5025 2000 0    60   ~ 0
+Rx
+$Comp
+L GND #PWR017
+U 1 1 58C3D8E6
+P 4925 2100
+F 0 "#PWR017" H 4925 1850 50  0001 C CNN
+F 1 "GND" H 4925 1950 50  0000 C CNN
+F 2 "" H 4925 2100 50  0000 C CNN
+F 3 "" H 4925 2100 50  0000 C CNN
+	1    4925 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR018
+U 1 1 58C3D910
+P 4925 1600
+F 0 "#PWR018" H 4925 1450 50  0001 C CNN
+F 1 "VCC" H 4925 1750 50  0000 C CNN
+F 2 "" H 4925 1600 50  0000 C CNN
+F 3 "" H 4925 1600 50  0000 C CNN
+	1    4925 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 7025 1125 7150
+Wire Wire Line
+	1625 7025 1625 7150
+Wire Wire Line
+	1625 7150 2025 7150
+Wire Wire Line
+	2025 7150 2025 6975
+Wire Wire Line
+	3200 1425 3200 1575
+Wire Wire Line
+	3200 2575 3200 2725
+Wire Wire Line
+	3200 2175 3200 2275
+Wire Wire Line
+	3525 2225 3200 2225
+Connection ~ 3200 2225
+Wire Wire Line
+	2025 3075 2025 2950
+Wire Wire Line
+	2025 3375 2025 3525
+Wire Wire Line
+	1925 1625 1925 1750
+Wire Wire Line
+	2025 2350 2025 2650
+Wire Notes Line
+	1550 950  2500 950 
+Wire Notes Line
+	2500 950  2500 3800
+Wire Notes Line
+	2500 3800 1550 3800
+Wire Notes Line
+	1550 3800 1550 950 
+Wire Notes Line
+	2825 950  3925 950 
+Wire Notes Line
+	3925 950  3925 3025
+Wire Notes Line
+	3925 3025 2825 3025
+Wire Notes Line
+	2825 3025 2825 950 
+Wire Wire Line
+	2825 5275 2825 5075
+Wire Wire Line
+	2825 5075 2250 5075
+Wire Wire Line
+	2750 5375 2750 5175
+Wire Wire Line
+	2750 5175 2250 5175
+Wire Wire Line
+	2825 5575 2825 5775
+Wire Wire Line
+	2825 5775 2250 5775
+Wire Wire Line
+	2750 5475 2750 5675
+Wire Wire Line
+	2750 5675 2250 5675
+Wire Wire Line
+	3475 5675 3300 5675
+Connection ~ 3300 5675
+Wire Wire Line
+	3475 5075 3175 5075
+Wire Wire Line
+	5025 5675 5200 5675
+Wire Wire Line
+	5200 5675 5200 6050
+Wire Notes Line
+	1550 4225 5725 4225
+Wire Notes Line
+	5725 4225 5725 6425
+Wire Notes Line
+	5725 6425 1550 6425
+Wire Notes Line
+	1550 6425 1550 4225
+Wire Notes Line
+	7725 4200 9525 4200
+Wire Notes Line
+	9525 4200 9525 5375
+Wire Notes Line
+	9525 5375 7725 5375
+Wire Notes Line
+	7725 5375 7725 4200
+Wire Wire Line
+	8550 1525 8675 1525
+Wire Wire Line
+	8675 1525 8675 1375
+Wire Wire Line
+	8550 1625 8675 1625
+Wire Wire Line
+	8675 1625 8675 2775
+Wire Wire Line
+	8550 1925 8825 1925
+Wire Wire Line
+	8550 2025 8825 2025
+Wire Wire Line
+	8550 2125 8825 2125
+Wire Wire Line
+	8550 2225 8825 2225
+Wire Wire Line
+	8550 2325 8825 2325
+Wire Wire Line
+	8550 2425 8825 2425
+Wire Wire Line
+	8550 2525 8825 2525
+Wire Wire Line
+	8550 2625 8825 2625
+Wire Wire Line
+	7250 1725 7075 1725
+Wire Wire Line
+	7075 1725 7075 2775
+Wire Wire Line
+	7075 1825 7250 1825
+Connection ~ 7075 1825
+Wire Wire Line
+	7250 1925 6925 1925
+Wire Wire Line
+	7250 2025 6925 2025
+Wire Wire Line
+	7250 2125 6925 2125
+Wire Wire Line
+	7250 2225 6925 2225
+Wire Wire Line
+	7250 2325 6925 2325
+Wire Wire Line
+	7250 2425 6925 2425
+Wire Wire Line
+	7250 2525 6925 2525
+Wire Wire Line
+	7250 2625 6925 2625
+Wire Notes Line
+	6300 975  9525 975 
+Wire Notes Line
+	9525 975  9525 3075
+Wire Notes Line
+	9525 3075 6300 3075
+Wire Notes Line
+	6300 3075 6300 975 
+Wire Wire Line
+	8550 1825 8825 1825
+Wire Wire Line
+	8825 1825 8825 1700
+Wire Wire Line
+	3175 5075 3175 4750
+Wire Wire Line
+	3475 5175 3300 5175
+Wire Wire Line
+	3300 5175 3300 6050
+Wire Wire Line
+	2825 5275 3475 5275
+Wire Wire Line
+	2750 5375 3475 5375
+Wire Wire Line
+	2750 5475 3475 5475
+Wire Wire Line
+	2825 5575 3475 5575
+Wire Wire Line
+	3325 4675 3325 4975
+Wire Wire Line
+	3325 4975 3475 4975
+Wire Wire Line
+	2400 7000 2400 7150
+Wire Wire Line
+	2400 7150 2950 7150
+Wire Wire Line
+	2950 7150 2950 6900
+Wire Wire Line
+	9000 4525 9250 4525
+Wire Wire Line
+	9250 4525 9250 4600
+Wire Wire Line
+	9250 5050 9250 5125
+Wire Wire Line
+	9250 5125 9000 5125
+Wire Wire Line
+	4825 1900 5025 1900
+Wire Wire Line
+	4825 2000 5025 2000
+Wire Wire Line
+	4825 1700 4925 1700
+Wire Wire Line
+	4925 1700 4925 1600
+Wire Wire Line
+	4825 1800 4925 1800
+Wire Wire Line
+	4925 1800 4925 2100
+Wire Wire Line
+	7250 1525 6925 1525
+Wire Wire Line
+	7250 1625 6925 1625
+Text Label 6925 1525 2    60   ~ 0
+Tx
+Text Label 6925 1625 2    60   ~ 0
+Rx
+Wire Notes Line
+	4325 950  5325 950 
+Wire Notes Line
+	5325 950  5325 3025
+Wire Notes Line
+	5325 3025 4325 3025
+Wire Notes Line
+	4325 3025 4325 950 
+$EndSCHEMATC
