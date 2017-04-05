@@ -4,16 +4,34 @@ This is the Raptor project repository
 
 A followline robot with N20 motors, 16340 batteries, arduino pro micro and TB6612 or Raspberry Pi Zero.
 
-This repository evolved from [fstdp/openscad](https://github.com/salvari/raptor), all openscad files are on `openscad_mis`directory
+This repository evolved
+from [fstdp/openscad](https://github.com/fstdp/openscad), all openscad
+files from the old repo are now on `openscad_misc`directory
 
-## openscad_misc
+# META
+
+This repo
+uses [BricoLabs KiCAD](https://github.com/brico-labs/bl_kicad_library)
+Library as a submodule.
+
+When cloning this repo you must:
+
+~~~~{bash}
+git clone https://github.com/brico-labs/Raptor
+cd Raptor
+git submodule init
+git submodule update
+~~~~
+
+
+# openscad_misc directory
 
 variety of OpenSCAD things from different projects
 
 - SpeedyGonZero, rearwing & ballcaster38 for Raspberry Pi Zero robot
 
 
-License MIT
+# License MIT
 
 Copyright 2017 Félix Sánchez-Tembleque
 
