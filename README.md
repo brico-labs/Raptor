@@ -23,6 +23,12 @@ git submodule init
 git submodule update
 ~~~~
 
+or just with one command:
+
+~~~~{bash}
+git clone --recursive https://github.com/brico-labs/Raptor
+~~~~
+
 
 # openscad_misc directory
 
